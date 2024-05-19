@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0f0e0e;
+}
+.container {
+  display: flex;
+}
+
+.black-side-container {
+  background-color: #0f0e0e;
+}
+header {
+  margin: 38px 0 0 38px;
+}
+form {
+  margin-top: 49px;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  color: #cccccc;
+}
+h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #717171;
+  margin: 6px 0 24px 0;
+}
+
+/* forms */
+
+.forms {
+  margin: 96px 0 0 135px;
+  width: 372px;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-group {
+  display: grid;
+  gap: 79px;
+  margin: 24px 0 18px 0;
+}
+
+/* remember */
+
+.remember {
+  display: flex;
+  justify-content: space-between;
+}
+.remember-form-field {
+  display: flex;
+  align-items: center;
+  gap: 0 8px;
+  margin-top: 18px;
+}
+.remember-label {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: #cccccc;
+}
+a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: #3972ef;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+/* big button */
+
+.big-btn {
+  width: 372px;
+  height: 52px;
+  background-color: #1b1b1b;
+  border: 0;
+  color: #a0a0a0;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  border-radius: 8px;
+  margin-top: 24px;
+}
+
+.big-btn:hover {
+  background-color: #2b2a2a;
+  color: #a0a0a0;
+}
+.sign-up {
+  display: flex;
+  align-items: center;
+  gap: 0 12px;
+  color: #cccccc;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  margin-top: 24px;
+}
+.small-btn {
+  width: 38px;
+  height: 34px;
+  border: 0;
+  border-radius: 8px;
+  background-color: rgba(204, 204, 204, 0.2);
+}
+.buttons {
+  display: flex;
+  gap: 0 16px;
+}
+.log-in {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #cccccc;
+  margin-top: 24px;
+}
+.log-in > a {
+  margin: 0 0 0 2px;
+}
+
+.big-img {
+  margin-left: 135px;
+}
+
+.big-img > img {
+  position: absolute;
+}
+.text {
+  position: absolute;
+  margin: 80px 0 0 44px;
+}
+h2 {
+  width: 357px;
+  height: 42px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  margin-bottom: 12px;
+  line-height: 42px;
+}
+p {
+  width: 366px;
+  height: 48px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  text-align: left;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 24px;
+}
+h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+input[type="checkbox"] {
+  appearance: none;
+  background-color: rgba(204, 204, 204, 0.2);
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-radius: 4px;
+}
+input[type="checkbox"]:checked {
+  background-color: #3972ef;
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-radius: 4px;
+  background-image: url(./icons/Vector\ 1.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* responsive */
+
+@media (max-width: 1150px) {
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  header {
+    display: none;
+  }
+  .big-img {
+    display: none;
+  }
+  .forms {
+    margin: 47px 74px 0 74px;
+  }
+}
+
+@media (max-width: 450px) {
+  .forms {
+    margin: 0;
+  }
+}
+
+.form button:hover {
+  background-color: #2b2a2a;
+  color: #a0a0a0;
+}
+.form button:active {
+  background-color: #3972ef;
+  color: white;
+}
+
+.input-group {
+  width: 372px;
+  position: relative;
+}
+.icon {
+  position: absolute;
+  bottom: 12px;
+  right: 0;
+}
+.error {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  font-family: "Roboto", sans-serif;
+  line-height: 18px;
+  color: #d74343;
+  font-weight: 400;
+  font-size: 14px;
+  transition: top 0.5s;
+}
+.label-field {
+  display: block;
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  bottom: 13px;
+  font-size: 14px;
+  left: 0;
+  color: #717171;
+  line-height: 15px;
+  transition: bottom 0.3s;
+}
+.input-field {
+  font-family: "Roboto", sans-serif;
+  display: block;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #717171;
+  color: white;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  left: 0;
+  padding: 5px 2px;
+  position: relative;
+  line-height: 18px;
+}

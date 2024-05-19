@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./test.css" />
+    <script src="./app.js" defer></script>
+    <title>Login-Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="black-side-container">
+        <header>
+          <img src="./icons/Group 40944.svg" alt="" />
+        </header>
+        <div class="forms">
+          <h1>Welcome</h1>
+          <h6>Create your account</h6>
+          <form id="form">
+            <div class="form-group">
+              <div class="input-group">
+                <label class="label-field" id="email-label">E-mail</label>
+                <input
+                  class="input-field"
+                  type="email"
+                  spellcheck="false"
+                  id="email-field"
+                  onkeyup="validationEmail()"
+                />
+                <span class="error" id="email-error"></span>
+                <img class="icon" src="./icons/Mail.svg" alt="" />
+              </div>
+              <div class="input-group">
+                <label class="label-field" id="password-label">Password</label>
+                <input
+                  class="input-field"
+                  type="password"
+                  spellcheck="false"
+                  id="password-field"
+                  onkeyup="validationPassword()"
+                />
+                <span class="error" id="password-error"></span>
+                <img
+                  id="show-password-img"
+                  class="icon"
+                  src="./icons/Group 40945.svg"
+                  alt="Show Password"
+                  onclick="showPassword()"
+                />
+              </div>
+
+              <div class="input-group">
+                <label class="label-field" id="repeat-password-label"
+                  >Repeat password</label
+                >
+                <input
+                  class="input-field"
+                  type="password"
+                  spellcheck="false"
+                  id="repeat-password-field"
+                  onkeyup="repeatValidationPassword()"
+                />
+                <span class="error" id="repeat-password-error"></span>
+                <img
+                  onclick="repeatShowPassword()"
+                  id="repeat-password-img"
+                  class="icon"
+                  src="./icons/Cloud.svg"
+                  alt="Show Password"
+                />
+              </div>
+            </div>
+            <div class="remember">
+              <div class="remember-form-field">
+                <input id="checkbox" type="checkbox" checked="checked" />
+                <label for="checkbox" id="checkbox" class="remember-label"
+                  >Remember for 30 days</label
+                >
+              </div>
+              <a href="">Forgot passwoard</a>
+            </div>
+            <button type="submit" class="big-btn">Create an account</button>
+          </form>
+          <!-- <button type="submit" class="big-btn">Create an account</button> -->
+          <div class="sign-up">
+            Sign Up with
+            <div class="buttons">
+              <button class="small-btn">
+                <img src="./icons/apple.svg" alt="" />
+              </button>
+              <button class="small-btn">
+                <img src="./icons/google (2) 1.svg" alt="" />
+              </button>
+              <button class="small-btn">
+                <img src="./icons/instagram (1) 1.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="log-in">
+            Do you have an account ?
+            <a href=""> Log In</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="big-img">
+        <img src="./icons/big-img.svg" alt="" />
+        <div class="text">
+          <h2>Designed for individuals</h2>
+          <p>
+            See the analytics and grow your date for Task remotely, from
+            anywhere!
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
