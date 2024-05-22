@@ -32,7 +32,7 @@ function validationEmail() {
 }
 
 function validationPassword() {
-  passwordLabel.style.bottom = "45px";
+  // passwordLabel.style.bottom = "45px";
   if (passwordField.value.length <= 6) {
     passwordError.innerHTML = "6+ stong character";
     passwordField.style.borderBottomColor = "#D74343";
@@ -114,3 +114,36 @@ function repeatShowPassword() {
     repeatPassImg.alt = "Show Password";
   }
 }
+
+// const inputField = document.getElementById("email-field");
+// const labelField = document.getElementById("email-label");
+
+emailField.addEventListener("focus", () => {
+  emailLabel.style.top = "-24px";
+});
+
+emailField.addEventListener("blur", () => {
+  if (emailField.value === "") {
+    emailLabel.style.top = "5px";
+  }
+});
+
+passwordField.addEventListener("focus", () => {
+  passwordLabel.style.top = "-24px";
+});
+
+passwordField.addEventListener("blur", () => {
+  if (passwordField.value === "") {
+    passwordLabel.style.top = "5px";
+  }
+});
+
+repeatPasswordField.addEventListener("focus", () => {
+  repeatPasswordLabel.style.top = "-24px";
+});
+
+repeatPasswordField.addEventListener("blur", () => {
+  if (repeatPasswordField.value === "") {
+    repeatPasswordLabel.style.top = "5px";
+  }
+});

@@ -215,10 +215,6 @@ input[type="checkbox"]:checked {
   color: white;
 }
 
-.input-group {
-  width: 372px;
-  position: relative;
-}
 .icon {
   position: absolute;
   bottom: 12px;
@@ -235,6 +231,28 @@ input[type="checkbox"]:checked {
   font-size: 14px;
   transition: top 0.5s;
 }
+
+.input-group {
+  position: relative;
+  /* margin-bottom: 20px; */
+}
+
+.label-field {
+  position: absolute;
+  left: 10px;
+  /* top: 10px; */
+  transition: all 0.3s ease-in-out;
+  pointer-events: none; /* Ensure the label doesn't intercept clicks */
+  color: #666; /* Optional: Adjust label color */
+}
+
+.input-field:focus + .label-field,
+.input-field:not(:placeholder-shown) + .label-field {
+  top: -15px;
+  font-size: 12px; /* Optional: Adjust label font size */
+  color: #333; /* Optional: Adjust label color when input is focused or has content */
+}
+
 .label-field {
   display: block;
   position: absolute;
@@ -244,7 +262,7 @@ input[type="checkbox"]:checked {
   left: 0;
   color: #717171;
   line-height: 15px;
-  transition: bottom 0.3s;
+  /* transition: bottom 0.3s; */
 }
 .input-field {
   font-family: "Roboto", sans-serif;
